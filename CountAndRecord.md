@@ -1,5 +1,7 @@
 # Simplifying the logic for count and record step
 
+The implementation of working example can be found [https://bino.ca1.qualtrics.com/survey-builder/SV_bpiiqwA8HhUVVVc/edit](https://bino.ca1.qualtrics.com/survey-builder/SV_bpiiqwA8HhUVVVc/edit)
+
 ## Recording Script
 ```
 Qualtrics.SurveyEngine.addOnload(function () { });
