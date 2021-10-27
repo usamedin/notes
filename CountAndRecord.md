@@ -6,18 +6,20 @@ The implementation of working example can be found [https://bino.ca1.qualtrics.c
 ```
 Qualtrics.SurveyEngine.addOnload(function () { });
 Qualtrics.SurveyEngine.addOnReady(function () {
+    // Account hash from addPype configuration
+    var accountHash = "edcf44381da8d8890a7b2028c111f725"
+    // Environment ID addPype configuration
+    var eid = "fCGHCD"
+
     var that = this;
     var countTime = parseInt(Qualtrics.SurveyEngine.getEmbeddedData('countTime') || 0)
     console.log('Count and Record ', countTime)
 
     var pipeParams = {
-        //size: {width:0,height:0},
         size: { width: 640, height: 360 },
         qualityurl: "avq/720p.xml",
-        accountHash: "edcf44381da8d8890a7b2028c111f725",
-        eid: "fCGHCD",
         payload: "${e://Field/ResponseID}",
-        mrt: countTime,
+        mrt: countTime, accountHash, eid,
         showMenu: 0, sis: 1, asv: 1, mv: 1, st: 1, ssb: 0, dup: 0, srec: 0
     };
 
