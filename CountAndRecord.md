@@ -2,7 +2,24 @@
 
 The implementation of working example can be found [https://bino.ca1.qualtrics.com/survey-builder/SV_bpiiqwA8HhUVVVc/edit](https://bino.ca1.qualtrics.com/survey-builder/SV_bpiiqwA8HhUVVVc/edit)
 
-## Recording Script
+## Count and Record Questions configuration
+![image](https://user-images.githubusercontent.com/5623935/139067653-2066d595-8bb4-4a52-a6f5-bcecc9974537.png)
+
+## Recording step HTML
+```
+<div style="text-align: center;">
+    <span style="font-size:22px;">
+        <strong id="countLabel"></strong>
+        <strong id="countdownContainer"></strong>
+    </span>
+    <span id="lookAtTheCameraText"> Please Look at the Camera</span>
+</div>
+
+<div id="recorder"></div>
+```
+
+
+## Recording step Javascript
 ```
 // Account hash from addPype configuration
 var accountHash = "edcf44381da8d8890a7b2028c111f725"
@@ -77,7 +94,7 @@ Qualtrics.SurveyEngine.addOnReady(function () {
 Qualtrics.SurveyEngine.addOnUnload(function () { });
 ```
 
-## Script for input field
+## Script for hearthbeats input field
 ```
 Qualtrics.SurveyEngine.addOnload(function()
 {
@@ -93,3 +110,8 @@ Qualtrics.SurveyEngine.addOnload(function()
   - Set countTime variable
   - Count and Record
   - Save counted heartbeats to embeded data
+	
+## Sigle step for Count and Record
+![image](https://user-images.githubusercontent.com/5623935/139068313-fd927405-1b08-4bf2-adde-24db78973f38.png)
+
+![image](https://user-images.githubusercontent.com/5623935/139068137-b3186dc7-a0cd-4adc-b0ea-fa26f61ee1f2.png)
