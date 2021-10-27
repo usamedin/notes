@@ -4,13 +4,13 @@ The implementation of working example can be found [https://bino.ca1.qualtrics.c
 
 ## Recording Script
 ```
+// Account hash from addPype configuration
+var accountHash = "edcf44381da8d8890a7b2028c111f725"
+// Environment ID from addPype configuration
+var eid = "fCGHCD"
+
 Qualtrics.SurveyEngine.addOnload(function () { });
 Qualtrics.SurveyEngine.addOnReady(function () {
-    // Account hash from addPype configuration
-    var accountHash = "edcf44381da8d8890a7b2028c111f725"
-    // Environment ID addPype configuration
-    var eid = "fCGHCD"
-
     var that = this;
     var countTime = parseInt(Qualtrics.SurveyEngine.getEmbeddedData('countTime') || 0)
     console.log('Count and Record ', countTime)
