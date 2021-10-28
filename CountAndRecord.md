@@ -2,6 +2,12 @@
 
 The implementation of working example can be found [https://bino.ca1.qualtrics.com/survey-builder/SV_bpiiqwA8HhUVVVc/edit](https://bino.ca1.qualtrics.com/survey-builder/SV_bpiiqwA8HhUVVVc/edit)
 
+## Insert the script in the header section in the Geenral settings
+```
+<script type="text/javascript" src="//cdn.addpipe.com/2.0/pipe.js">
+</script>
+```
+
 ## Count and Record Questions configuration
 ![image](https://user-images.githubusercontent.com/5623935/139067653-2066d595-8bb4-4a52-a6f5-bcecc9974537.png)
 
